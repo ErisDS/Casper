@@ -27,7 +27,9 @@
 
         </header>
         <section class="post-excerpt">
-            <p>{{excerpt}}&hellip;</p>
+            {{#if @first}}
+               <p>{{excerpt}}&hellip;</p>
+            {{/if}}
         </section>
     </article>
 
