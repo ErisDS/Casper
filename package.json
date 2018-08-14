@@ -13,7 +13,8 @@
     },
     "scripts": {
       "dev": "gulp",
-      "zip": "gulp zip"
+      "zip": "gulp zip",
+      "test": "gscan ."
     },
     "author": {
         "name": "Ghost Foundation",
@@ -41,6 +42,7 @@
     "devDependencies": {
         "autoprefixer": "6.3.6",
         "cssnano": "3.7.1",
+        "gscan": "https://github.com/ErisDS/gscan/tarball/215ae963a47e4a82a9490f07ef68157c77e3f51b",
         "gulp": "3.9.1",
         "gulp-livereload": "3.8.1",
         "gulp-postcss": "6.1.1",
