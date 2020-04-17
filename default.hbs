@@ -18,6 +18,12 @@
         {{else}}
             --color-primary: #3eb0ef;
         {{/if}}
+
+        {{#if @site.brand.oneColumn}}
+            --flex-layout: none;
+        {{else}}
+            --flex-layout: 1 1 301px;
+        {{/if}}
         }
     </style>
 
@@ -29,8 +35,11 @@
 
 </head>
 <body class="{{body_class}}">
-
     <div class="site-wrapper">
+
+        Primary Color: {{@site.brand.primaryColor}}
+        One Column: {{@site.brand.oneColumn}}
+
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
